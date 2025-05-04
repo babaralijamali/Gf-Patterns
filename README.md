@@ -12,8 +12,10 @@ git clone https://github.com/babaralijamali/Gf-Patterns
 
 # To get started quickly:
 mkdir ~/.gf
+#
 mv ~/Gf-Patterns/*.json ~/.gf
 
 # Use Example
 cat subdomains.txt | waybackurls | sort -u >> waybackdata | gf ssrf | tee -a ssrfparams.txt
+#
 cat waybackdata | gf redirect | tee -a redirect.txt
